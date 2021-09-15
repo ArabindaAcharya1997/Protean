@@ -21,7 +21,7 @@ public class AppiumTest {
 		
     	DesiredCapabilities caps = new DesiredCapabilities();
     	
-    	// Set your access credentials
+    	// Set your access credentials 
     	caps.setCapability("apmosys.user", "YOUR_USERNAME");
     	caps.setCapability("apmosys.key", "YOUR_ACCESS_KEY");
     	
