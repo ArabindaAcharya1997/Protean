@@ -30,17 +30,11 @@ mvn clean install
 - Getting Started with Appium tests in Java on Protean is that simple! :
 
 **1. For Maven Project**
-- Put the following dependency in your pom.xml file along with selenium dependency
-
-	<dependency>
-    	<groupId>io.appium</groupId>
-    	<artifactId>java-client</artifactId>
-    	<version>7.0.0</version>
-	</dependency>
+- Put the following dependency in your pom.xml file along with selenium dependency [here](https://mvnrepository.com/artifact/io.appium/java-client/7.0.0)
 
 **2. For Java Project**
 
-- Download appium java-client from [here](https://repo1.maven.org/maven2/io/appium/java-client/7.0.0/java-client-7.0.0.jar) and put in your dependency file (build path)
+- Download appium java-client from [here](https://mvnrepository.com/artifact/io.appium/java-client/7.0.0) and put in your dependency file (build path)
 
 ### Run your first test :
 
