@@ -23,30 +23,32 @@ public class AppiumTest {
     	
     	// Set your access credentials 
     	caps.setCapability("apmosys.user", "YOUR_USERNAME");
-    	caps.setCapability("apmosys.key", "YOUR_ACCESS_KEY");
+    	caps.setCapability("apmosys.accessToken", "YOUR_ACCESS_KEY");
     	
     	// Set URL of the application under test
     	caps.setCapability("appPackage", "Custom_AppPackage");
     	caps.setCapability("appActivity", "Custom_AppActivity");
     	
     	// Specify device and os_version for testing
-    	caps.setCapability("device", "Google Pixel 3");
-    	caps.setCapability("os_version", "9.0");
-        
+    	caps.setCapability("deviceName", "Device_Name");
+    	caps.setCapability("udid", "UDID");
+    	caps.setCapability("platformName", "Platform_Name");    	
+    	caps.setCapability("platformVersion", "Platform_Version");
+    	
+    	caps.setCapability("automationName", "uiautomator2");
+    	
     	// Set other Protean capabilities
-    	caps.setCapability("project", "First Java Project");
-    	caps.setCapability("build", "Java Android");
-    	caps.setCapability("name", "first_test");
+    	caps.setCapability("name", "Test_Name");
        
     	
     	// Initialise the remote Webdriver using BrowserStack remote URL
     	// and desired capabilities defined above
         AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(
-        		new URL("http://114.243.118.242/wd/hub"), caps);
+        		new URL("http://114.243.118.242:9091/wd/hub"), caps);
         
 
         // Sample Test case for the Android app. 
-        // If you have uploaded your app, update the test case here. 
+        //Write your own test script for the app 
         AndroidElement searchElement = (AndroidElement) new WebDriverWait(driver, 30).until(
             ExpectedConditions.elementToBeClickable(
             		MobileBy.AccessibilityId("Search Wikipedia")));
