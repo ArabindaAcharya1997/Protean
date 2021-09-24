@@ -64,3 +64,12 @@ Open `AppiumTest.java` file in the `android` directory :
 - You can access the test execution results on [Automation --> Automation_Logs tab]
 
 ---
+
+### Find Elements of mobile
+- Go to `Automation` tab.
+- Click on `Start app Inspector` button, then app inspector window will open on next tab.
+- Go to mobile screen and go to page where you want to find locator of element.
+- Now go to app inspector tab and `refresh it`.
+- Mobile screen with your elemwnt will appear, now click on the element which you want to locate, then you will find all loactors of that element on right side of that mobile screen.
+- Copy locator which you want and paste it on your script.
+- You can also find `appPackage` in this tab.
